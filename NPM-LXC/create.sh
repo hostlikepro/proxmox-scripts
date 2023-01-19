@@ -172,7 +172,7 @@ _pct_options=(
   -hostname $_host_name
   -cores $_cpu_cores
   -memory $_memory
-  -net0 name=eth0,bridge=$_bridge,ip=192.168.100.13/24
+  -net0 name=eth0,bridge=$_bridge,ip=dhcp
   -onboot 1
   -ostype $_os_type
   -rootfs $_rootfs,size=$_disk_size
