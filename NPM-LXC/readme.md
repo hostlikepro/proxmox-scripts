@@ -33,7 +33,7 @@ curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-
 ```
 В данном примере будет запущен скрипт установки контейнера с названием *"NPM"*, который будет размещён на смонтированном диске *"technic"* и имеющий сетевую карту, смотрящую на мост *vmbr100*.
 
->***Примечание:*** _протестировано на proxmox 6.4+._
+> ***Примечание:*** _протестировано на proxmox 6.4+._
 
 ## Стандартные настройки
 
@@ -55,4 +55,4 @@ Password: changeme
 ```bash
 wget --no-cache -qO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC/setup.sh | sh
 ```
-***Примечание:*** _в настоящее время этот скрипт поддерживает работоспособность только на системах Alpine, Debian и Ubuntu._
+> ***Примечание:*** _в настоящее время этот скрипт поддерживает работоспособность только на системах Alpine, Debian и Ubuntu._
