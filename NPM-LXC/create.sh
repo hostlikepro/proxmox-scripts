@@ -31,7 +31,7 @@ function error {
 }
 
 # Base raw github URL
-_raw_base="https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc"
+_raw_base="https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC"
 # Operating system
 _os_type=alpine
 _os_version=3.16
@@ -172,7 +172,7 @@ _pct_options=(
   -hostname $_host_name
   -cores $_cpu_cores
   -memory $_memory
-  -net0 name=eth0,bridge=$_bridge,ip=192.168.100.14/24
+  -net0 name=eth0,bridge=$_bridge,ip=192.168.100.13/24
   -onboot 1
   -ostype $_os_type
   -rootfs $_rootfs,size=$_disk_size

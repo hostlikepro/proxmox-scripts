@@ -10,7 +10,7 @@ To create a new LXC container on Proxmox and setup Nginx Proxy Manager to run in
 ***Note:*** _This will create alpine container_
 
 ```bash
-curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc/create.sh | bash -s
+curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC/create.sh | bash -s
 ```
 
 ### Command line arguments
@@ -29,7 +29,7 @@ curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-
 you can set these parameters by appending ` -- <parameter> <value>` like:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc/create.sh | bash -s -- --bridge vmbr100 --hostname NPM --storage technic
+curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC/create.sh | bash -s -- --bridge vmbr100 --hostname NPM --storage technic
 ```
 
 ### Console
@@ -52,5 +52,5 @@ If you are not using proxmox or want to install this on a existing Alpine box, y
 ***Note:*** _Only Alpine, Debian and Ubuntu are currently supported by this script_
 
 ```bash
-wget --no-cache -qO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc/setup.sh | sh
+wget --no-cache -qO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC/setup.sh | sh
 ```
