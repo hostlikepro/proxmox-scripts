@@ -4,8 +4,8 @@
 
 ## [Nginx Proxy Manager - LXC](https://github.com/hostlikepro/proxmox-scripts/tree/main/NPM-LXC)
 
-Скрипт автоматического развёртывания LXC контейнера на базе Alpine в среде Proxmox и дальнейшая установка связки Nginx Proxy Manager + WebUI. Имеется решение для установки в уже готовый контейнер.
-> ***Примечание:*** _протестировано на системах Proxmox 6.4+._
+РЎРєСЂРёРїС‚ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ СЂР°Р·РІС‘СЂС‚С‹РІР°РЅРёСЏ LXC РєРѕРЅС‚РµР№РЅРµСЂР° РЅР° Р±Р°Р·Рµ Alpine РІ СЃСЂРµРґРµ Proxmox Рё РґР°Р»СЊРЅРµР№С€Р°СЏ СѓСЃС‚Р°РЅРѕРІРєР° СЃРІСЏР·РєРё Nginx Proxy Manager + WebUI. РРјРµРµС‚СЃСЏ СЂРµС€РµРЅРёРµ РґР»СЏ СѓСЃС‚Р°РЅРѕРІРєРё РІ СѓР¶Рµ РіРѕС‚РѕРІС‹Р№ РєРѕРЅС‚РµР№РЅРµСЂ.
+> ***РџСЂРёРјРµС‡Р°РЅРёРµ:*** _РїСЂРѕС‚РµСЃС‚РёСЂРѕРІР°РЅРѕ РЅР° СЃРёСЃС‚РµРјР°С… Proxmox 6.4+._
 
 <p align="right"><a href="https://hits.sh/github.com/hostlikepro/proxmox-scripts/"><img alt="Hits" src="https://hits.sh/github.com/hostlikepro/proxmox-scripts.svg?label=Gotcha&color=f1aa4a&labelColor=000000&logo=github"/></a></p>
 
