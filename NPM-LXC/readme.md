@@ -29,7 +29,7 @@ curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-
 you can set these parameters by appending ` -- <parameter> <value>` like:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc/create.sh | bash -s -- --cores 4
+curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc/create.sh | bash -s -- --bridge vmbr100 --hostname NPM --storage technic
 ```
 
 ### Console
