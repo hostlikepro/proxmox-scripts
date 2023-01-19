@@ -1,4 +1,4 @@
-<p align="right"><a href="https://github.com/hostlikepro/proxmox-scripts/blob/main/NPM-LXC/readme.md">RU Version</a></p>
+<p align="right"><a href="https://github.com/hostlikepro/proxmox-scripts/blob/main/NPM-LXC/readme.md"><b>RU version</b></a></p>
 
 # Nginx Proxy Manager in Proxmox LXC container
 
