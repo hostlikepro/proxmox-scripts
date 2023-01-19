@@ -31,7 +31,7 @@ function error {
 }
 
 # Base raw github URL
-_raw_base="https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/npm-lxc"
+_raw_base="https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc"
 # Operating system
 _os_type=alpine
 _os_version=3.16

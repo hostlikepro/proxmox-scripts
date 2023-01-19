@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 TMP=/tmp/npm_install.sh
-URL=https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/npm-lxc/install
+URL=https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/npm-lxc/install
 
 if [ "$(uname)" != "Linux" ]; then
   echo "OS NOT SUPPORTED"
