@@ -1,4 +1,4 @@
-<p align="right"><a href="https://github.com/hostlikepro/proxmox-scripts/blob/main/NPM-LXC/README_eng.MD">ENG Version</a></p>
+<p align="right"><a href="https://github.com/hostlikepro/proxmox-scripts/blob/main/NPM-LXC/readme_eng.md">ENG Version</a></p>
 
 # Nginx Proxy Manager â Proxmox LXC 
 
