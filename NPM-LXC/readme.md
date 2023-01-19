@@ -1,43 +1,46 @@
-# Nginx Proxy Manager in Proxmox LXC container
+<p align="right">Eng Version</p>
 
-Many benefits can be gained by using a LXC container compared to a VM. The resources needed to run a LXC container are less than running a VM. Modifing the resouces assigned to the LXC container can be done without having to reboot the container. The serial devices connected to Proxmox can be shared with multiple LXC containers simulatenously.
+# Nginx Proxy Manager в Proxmox LXC 
 
-## Usage
+Используя контейнер LXC, вы получаете намного больше преимуществ в сравнении с эмуляцией полноценной виртуальной машины. Ресурсов, необходимых для запуска контейнера LXC, потребляется намного меньше, чем для запуска KVM эмуляции. Изменение ресурсов, назначенных контейнеру LXC, можно выполнить без перезагрузки контейнера, в режиме "хот-спот". Последовательные устройства, подключенные к Proxmox, могут совместно использоваться несколькими контейнерами LXC одновременно.
 
-To create a new LXC container on Proxmox and setup Nginx Proxy Manager to run inside of it, run the following in a SSH connection or the Proxmox web shell.
+## Использование
 
-***Note:*** _tested with proxmox 6.4+_
-***Note:*** _This will create alpine container_
+Чтобы создать новый контейнер LXC на Proxmox и настроить Nginx Proxy Manager, запустите следующую команду через терминал при SSH-подключении или через консоль внутри самого WebUI Proxmox.
+
+***Примечание:*** _протестировано на proxmox 6.4+_
+***Примечание:*** _данная команда создаст контейнер alpine._
 
 ```bash
 curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC/create.sh | bash -s
 ```
 
-### Command line arguments
-| argument           | default              | description                                            |
+### Аргументы командной строки
+| Аргумент           | По умолчанию         | Описание                                               |
 |--------------------|----------------------|--------------------------------------------------------|
-| --id          | $nextid                   | container id                                           |
-| --bridge      | vmbr0                     | bridge used for eth0                                   |
-| --cores       | 1                         | number of cpu cores                                    |
-| --disksize    | 2G                        | size of disk                                           |
-| --hostname    | nginx-proxy-manager       | hostname of the container                              |
-| --memory      | 512                       | amount of memory                                       |
-| --storage     | local-lvm                 | storage location for container disk                    |
-| --templates   | local                     | storage location for templates                         |
-| --swap        | 0                         | amount of SWAP                                         |
+| --id          | $nextid                   | Номер (id) контейнера                                  |
+| --bridge      | vmbr0                     | Название bridge для эмуляции сетевой карты             |
+| --cores       | 1                         | Количество ядер CPU                                    |
+| --disksize    | 2G                        | Дисковое пространство                                  |
+| --hostname    | nginx-proxy-manager       | Название контейнера                                    |
+| --memory      | 512                       | Количество выделяемой RAM                              |
+| --storage     | local-lvm                 | Хранилище виртуального диска контейнера                |
+| --templates   | local                     | Хранилище шаблона системы                              |
+| --swap        | 0                         | Размер файла подкачки (SWAP)                           |
 
-you can set these parameters by appending ` -- <parameter> <value>` like:
-
+вы можете изменить эти параметры персонально, добавив аргумент  `-- <parameter> <value>` в конец скрипта, например:
 ```bash
 curl -sL https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC/create.sh | bash -s -- --bridge vmbr100 --hostname NPM --storage technic
 ```
+В данном примере будет запущен скрипт установки контейнера с названием *"NPM"*, который будет размещён на смонтированном диске *"technic"* и имеющий сетевую карту, смотрящую на мост *vmbr100*.
 
-### Console
+### Терминал
 
-There is no login required to access the console from the Proxmox web UI. If you are presented with a blank screen, press `CTRL + C` to generate a prompt.
+Для доступа к терминалу контейнера из веб-интерфейса Proxmox не требуется вход в систему. Если вы видите пустой экран, то необходимо нажать `CTRL + C`, чтобы создать запрос.
 
-### Default Settings
+### Стандартные настройки
 
+Данные настройки устанавливаются автоматически после установки для входа в WebUI NPM. После первого входа система попросит изменить данные для входа на уникальные.
 ```
 http://127.0.0.1:81
 Email:    admin@example.com
@@ -45,12 +48,10 @@ Password: changeme
 ```
 
 
-## Alternative Usage
+## Альтернативное использование
 
-If you are not using proxmox or want to install this on a existing Alpine box, you can run the setup script itself.
-
-***Note:*** _Only Alpine, Debian and Ubuntu are currently supported by this script_
-
+Если вы не используете Proxmox, либо хотите установить его на существующий контейнер Alpine, вы можете запустить непосредственно скрипт установки NPM. Дополнительных контейнеров в этом сценарии создано не будет.
 ```bash
 wget --no-cache -qO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/NPM-LXC/setup.sh | sh
 ```
+***Примечание:*** _в настоящее время этот скрипт поддерживает работоспособность только на системах Alpine, Debian и Ubuntu._
