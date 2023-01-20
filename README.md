@@ -13,7 +13,7 @@
 ## [Uptime Kuma - LXC](https://github.com/hostlikepro/proxmox-scripts/tree/main/UptimeKuma-LXC)
 
 Uptime Kuma — это автономная система мониторинга и оповещения с открытым исходным кодом. Она включает возможность отслеживания работоспособности протоколов: HTTP(s) / TCP / HTTP(s) / Ping / DNS Record / Push / Steam Game Server.
-> **Примечание:** _протестировано на Proxmox v.7+._
+> **Примечание:** _протестировано на системах Proxmox v.7+._
 
 #
 
