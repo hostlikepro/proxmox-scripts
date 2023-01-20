@@ -12,10 +12,10 @@ To Update Uptime Kuma, run the command below in the LXC Console.
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/UptimeKuma-LXC/setup.sh)"
 ```
 To setup Uptime Kuma in an already created LXC or in another kind of container, run this command in the LXC Console.
-> **Note:** _not recommended._
 ```
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/UptimeKuma-LXC/install.sh)"
 ```
+> **Note:** _not recommended._
 
 ---
 

@@ -12,10 +12,10 @@ Uptime Kuma — это автономная система мониторинг�
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/UptimeKuma-LXC/setup.sh)"
 ```
 Для установки Uptime Kuma на уже созданный ранее LXC контейнер, либо в другие системы контейнеризации, воспользуйтесь командой ниже.
-> **Примечание:** _не рекомендуется._
 ```
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/hostlikepro/proxmox-scripts/main/UptimeKuma-LXC/install.sh)"
 ```
+> **Примечание:** _не рекомендуется._
 
 ---
 
