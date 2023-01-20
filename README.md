@@ -6,7 +6,12 @@
 ## [Nginx Proxy Manager - LXC](https://github.com/hostlikepro/proxmox-scripts/tree/main/NPM-LXC)
 
 Скрипт автоматической развёртки LXC контейнера на базе операционной системы Alpine/Debian в среде Proxmox и дальнейшая установка связки Nginx Proxy Manager + WebUI. Имеется решение для установки утилиты NPM и её веб-интерфейса в уже готовый контейнер.
-> ***Примечание:*** _протестировано на системах Proxmox 6.4+._
+> ***Примечание:*** _протестировано на системах Proxmox v.6.4+._
+
+## [Uptime Kuma - LXC](https://github.com/hostlikepro/proxmox-scripts/tree/main/UptimeKuma-LXC)
+
+Uptime Kuma — это автономная система мониторинга и оповещения с открытым исходным кодом. Она включает возможность отслеживания работоспособности протоколов: HTTP(s) / TCP / HTTP(s) / Ping / DNS Record / Push / Steam Game Server.
+> **Примечание:** _тестировалось на Proxmox v.7+._
 
 #
 
